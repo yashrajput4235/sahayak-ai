@@ -1,22 +1,32 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { apiPost } from '../services/api';
 
 export default function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '', confirm: '' });
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     if (!form.name || !form.email || !form.password || !form.confirm) { setError('Please fill in all fields.'); return; }
     if (form.password.length < 6) { setError('Password must be at least 6 characters.'); return; }
     if (form.password !== form.confirm) { setError('Passwords do not match.'); return; }
-    localStorage.setItem('sahayak_user', JSON.stringify({ name: form.name, email: form.email, password: form.password }));
-    localStorage.setItem('sahayak_auth', JSON.stringify({ name: form.name, email: form.email }));
-    navigate('/dashboard');
+    setLoading(true);
+    try {
+      const data = await apiPost('/api/auth/register', { name: form.name, email: form.email, password: form.password });
+      localStorage.setItem('sahayak_token', data.token);
+      localStorage.setItem('sahayak_auth', JSON.stringify(data.user));
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.message || 'Registration failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -76,7 +86,9 @@ export default function Register() {
               <label>Confirm Password</label>
               <input type="password" placeholder="Confirm your password" value={form.confirm} onChange={set('confirm')} />
             </div>
-            <button type="submit" className="btn-primary">Create account</button>
+            <button type="submit" className="btn-primary" disabled={loading}>
+              {loading ? 'Creating account...' : 'Create account'}
+            </button>
           </form>
           <p className="auth-footer">Already have an account? <Link to="/">Sign in</Link></p>
         </div>

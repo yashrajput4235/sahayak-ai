@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import { apiPost } from '../services/api';
 
 export default function Dashboard() {
   const [notes, setNotes] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -11,10 +14,17 @@ export default function Dashboard() {
     if (!auth) navigate('/');
   }, [navigate]);
 
-  const handleGenerate = () => {
+  const handleGenerate = async () => {
     if (!notes.trim()) return;
-    localStorage.setItem('sahayak_case_notes', notes);
-    navigate('/results');
+    setError('');
+    setLoading(true);
+    try {
+      const result = await apiPost('/api/cases/generate', { notes });
+      navigate('/results', { state: { result } });
+    } catch (err) {
+      setError(err.message || 'Failed to generate plan. Please try again.');
+      setLoading(false);
+    }
   };
 
   return (
@@ -44,8 +54,9 @@ export default function Dashboard() {
             placeholder="Enter beneficiary details, problems, income status, family situation, health conditions, employment history, and any other relevant information..."
           />
           <p className="case-hint">Include as much detail as possible for accurate AI analysis and recommendations.</p>
-          <button className="btn-generate" onClick={handleGenerate} disabled={!notes.trim()}>
-            ⚙️ Generate Plan
+          {error && <div className="error-msg">{error}</div>}
+          <button className="btn-generate" onClick={handleGenerate} disabled={!notes.trim() || loading}>
+            {loading ? '⏳ Generating Plan...' : '⚙️ Generate Plan'}
           </button>
         </div>
       </div>

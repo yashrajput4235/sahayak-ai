@@ -1,22 +1,29 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { apiPost } from '../services/api';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     if (!email || !password) { setError('Please fill in all fields.'); return; }
-    const stored = JSON.parse(localStorage.getItem('sahayak_user') || 'null');
-    if (!stored || stored.email !== email || stored.password !== password) {
-      setError('Invalid email or password.'); return;
+    setLoading(true);
+    try {
+      const data = await apiPost('/api/auth/login', { email, password });
+      localStorage.setItem('sahayak_token', data.token);
+      localStorage.setItem('sahayak_auth', JSON.stringify(data.user));
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.message || 'Login failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
-    localStorage.setItem('sahayak_auth', JSON.stringify({ name: stored.name, email }));
-    navigate('/dashboard');
   };
 
   return (
@@ -80,7 +87,9 @@ export default function Login() {
               <label>Password</label>
               <input type="password" placeholder="Enter your password" value={password} onChange={e => setPassword(e.target.value)} />
             </div>
-            <button type="submit" className="btn-primary">Sign in</button>
+            <button type="submit" className="btn-primary" disabled={loading}>
+              {loading ? 'Signing in...' : 'Sign in'}
+            </button>
           </form>
           <p className="auth-footer">Don't have an account? <Link to="/register">Sign up</Link></p>
         </div>
