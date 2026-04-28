@@ -29,29 +29,48 @@ const MODELS = [
   "gemini-2.0-flash-lite",
 ];
 
-async function callGemini(prompt, retries = 2) {
-  for (const model of MODELS) {
-    for (let attempt = 0; attempt <= retries; attempt++) {
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+async function callGemini(prompt) {
+  const errors = [];
+
+  for (let pass = 0; pass < 3; pass++) {
+    for (const model of MODELS) {
       try {
         const res = await axios.post(
           `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
-          { contents: [{ parts: [{ text: prompt }] }] }
+          { contents: [{ parts: [{ text: prompt }] }] },
+          { timeout: 60000 }
         );
-        console.log(`[AI] Used model: ${model}`);
+        console.log(`[AI] Used model: ${model} (pass ${pass + 1})`);
         return res.data.candidates[0].content.parts[0].text;
       } catch (err) {
         const status = err.response?.data?.error?.status;
-        console.warn(`[AI] ${model} attempt ${attempt + 1} failed: ${status}`);
-        if (status === 'RESOURCE_EXHAUSTED') break;
-        if (status === 'UNAVAILABLE' && attempt < retries) {
-          await new Promise(r => setTimeout(r, (attempt + 1) * 3000));
+        console.warn(`[AI] ${model} pass ${pass + 1} failed: ${status}`);
+        errors.push(`${model}: ${status}`);
+
+        if (status === 'RESOURCE_EXHAUSTED') {
+          // Rate limited — wait before next model
+          await sleep(5000);
           continue;
         }
+        if (status === 'UNAVAILABLE') {
+          await sleep(3000);
+          continue;
+        }
+        // For other errors (INVALID_ARGUMENT, etc.) skip model immediately
         break;
       }
     }
+
+    if (pass < 2) {
+      // All models failed this pass — wait longer before retrying all
+      console.warn(`[AI] All models failed on pass ${pass + 1}, waiting 20s before retry…`);
+      await sleep(20000);
+    }
   }
-  throw new Error("All AI models failed or quota exceeded");
+
+  throw new Error(`All AI models failed or quota exceeded. Details: ${errors.slice(-4).join(', ')}`);
 }
 
 export const callAI = async (notes, schemes) => {

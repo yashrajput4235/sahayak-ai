@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import { apiPost, apiGet } from '../services/api';
 
 const POLL_INTERVAL = 2000;
-const POLL_TIMEOUT  = 300000; // 5 minutes
+const POLL_TIMEOUT  = 600000; // 10 minutes — AI retries can take time
 
 export default function Dashboard() {
   const [notes, setNotes] = useState('');
