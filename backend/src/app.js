@@ -1,6 +1,7 @@
 import express from 'express';
 import caseRoutes from './routes/caseRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import { requestLogger } from './middleware/requestLogger.js';
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
+app.use(requestLogger);
 
 app.use('/api/cases', caseRoutes);
 app.use('/api/auth', authRoutes);

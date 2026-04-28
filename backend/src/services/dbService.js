@@ -80,16 +80,19 @@ export const createCase = async (data) => {
 };
 
 export const updateCase = async (caseId, output) => {
+    const isFailed = output.status === 'failed';
     await axios.patch(
         `${URL}/rest/v1/cases?id=eq.${caseId}`,
         {
-            output,
-            status: "completed"
+            ai_output: isFailed ? null : output,
+            status: isFailed ? 'failed' : 'completed',
+            error: output.error || null
         },
         {
             headers: {
                 apikey: KEY,
-                Authorization: `Bearer ${KEY}`
+                Authorization: `Bearer ${KEY}`,
+                "Content-Type": "application/json"
             }
         }
     );

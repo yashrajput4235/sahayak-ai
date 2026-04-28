@@ -1,6 +1,6 @@
-import { getRelevantSchemes } from "../services/ragService.js";
-import { callAI } from "../services/aiService.js";
-import { saveCase } from "../services/dbService.js";
+import { createCase } from "../services/dbService.js";
+import { addToQueue } from "../services/queueService.js";
+import logger from "../utils/logger.js";
 
 export const generateCase = async (req, res) => {
     try {
@@ -9,12 +9,20 @@ export const generateCase = async (req, res) => {
             return res.status(400).json({ error: "Notes required" });
         }
 
-        const schemes = await getRelevantSchemes(notes);
-        const aiResponse = await callAI(notes, schemes);
-        await saveCase(notes, aiResponse, req.user.user_id);
-        res.json(aiResponse);
+        const userId = req.user.user_id;
+        logger.info("Queuing case generation", { user_id: userId });
+
+        // Create case immediately with 'pending' status
+        const newCase = await createCase({ notes, user_id: userId, status: 'pending' });
+
+        // Push to queue with retry counter
+        await addToQueue({ notes, userId, caseId: newCase.id, retry: 0 });
+
+        logger.info("Case queued", { caseId: newCase.id, user_id: userId });
+        res.status(202).json({ caseId: newCase.id, status: 'pending' });
+
     } catch (error) {
-        console.error("Error generating case:", error);
-        res.status(500).json({ error: "Failed to generate case" });
+        logger.error("Error queuing case", { message: error.message });
+        res.status(500).json({ error: "Failed to queue case" });
     }
 };

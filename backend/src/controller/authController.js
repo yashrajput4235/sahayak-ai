@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { createUser, findUserByEmail } from '../services/dbService.js';
+import logger from '../utils/logger.js';
 
 export const register = async (req, res) => {
   try {
@@ -14,9 +15,10 @@ export const register = async (req, res) => {
     const user = await createUser({ fullname: name, email, password: hashed });
 
     const token = jwt.sign({ user_id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
+    logger.info('User registered', { email: user.email });
     res.json({ token, user: { name: user.fullname, email: user.email } });
   } catch (err) {
-    console.error('Register error:', err);
+    logger.error('Register error', { message: err.message });
     res.status(500).json({ error: 'Registration failed' });
   }
 };
@@ -30,12 +32,16 @@ export const login = async (req, res) => {
     if (!user) return res.status(401).json({ error: 'Invalid credentials' });
 
     const match = await bcrypt.compare(password, user.password);
-    if (!match) return res.status(401).json({ error: 'Invalid credentials' });
+    if (!match) {
+      logger.warn('Failed login attempt', { email });
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
 
     const token = jwt.sign({ user_id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '7d' });
+    logger.info('User logged in', { email: user.email });
     res.json({ token, user: { name: user.fullname, email: user.email } });
   } catch (err) {
-    console.error('Login error:', err);
+    logger.error('Login error', { message: err.message });
     res.status(500).json({ error: 'Login failed' });
   }
 };
