@@ -10,4 +10,7 @@ app.listen(PORT, () => {
 });
 
 // Start background worker automatically
-runWorker();
+runWorker().catch(err => {
+  logger.error('[Worker] Fatal crash', { message: err.message });
+  process.exit(1);
+});

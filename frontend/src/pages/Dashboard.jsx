@@ -1,26 +1,86 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { apiPost } from '../services/api';
+import { apiPost, apiGet } from '../services/api';
+
+const POLL_INTERVAL = 2000;
+const POLL_TIMEOUT  = 300000; // 5 minutes
 
 export default function Dashboard() {
   const [notes, setNotes] = useState('');
   const [loading, setLoading] = useState(false);
+  const [statusMsg, setStatusMsg] = useState('');
+  const [elapsed, setElapsed] = useState(0);
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const pollTimer = useRef(null);
+  const elapsedTimer = useRef(null);
 
   useEffect(() => {
     const auth = JSON.parse(localStorage.getItem('sahayak_auth') || 'null');
     if (!auth) navigate('/');
+    return () => {
+      clearTimeout(pollTimer.current);
+      clearInterval(elapsedTimer.current);
+    };
   }, [navigate]);
+
+  const startElapsedCounter = () => {
+    setElapsed(0);
+    elapsedTimer.current = setInterval(() => {
+      setElapsed(s => s + 1);
+    }, 1000);
+  };
+
+  const stopElapsedCounter = () => {
+    clearInterval(elapsedTimer.current);
+  };
+
+  const pollForResult = (caseId, deadline) => {
+    pollTimer.current = setTimeout(async () => {
+      if (Date.now() > deadline) {
+        stopElapsedCounter();
+        setError('Analysis is taking too long. Please try again later.');
+        setLoading(false);
+        return;
+      }
+      try {
+        const data = await apiGet(`/api/cases/status/${caseId}?_t=${Date.now()}`);
+        if (data.status === 'completed') {
+          clearTimeout(pollTimer.current);
+          stopElapsedCounter();
+          navigate('/results', { state: { result: data.result } });
+        } else if (data.status === 'failed') {
+          clearTimeout(pollTimer.current);
+          stopElapsedCounter();
+          setError(data.error || 'Case analysis failed. Please try again.');
+          setLoading(false);
+        } else {
+          if (data.status === 'processing') {
+            setStatusMsg('🧠 AI is generating your 30-day plan…');
+          } else {
+            setStatusMsg('⏳ Case queued, waiting for worker…');
+          }
+          pollForResult(caseId, deadline);
+        }
+      } catch (err) {
+        stopElapsedCounter();
+        setError(err.message || 'Failed to fetch result.');
+        setLoading(false);
+      }
+    }, POLL_INTERVAL);
+  };
 
   const handleGenerate = async () => {
     if (!notes.trim()) return;
     setError('');
+    setStatusMsg('');
     setLoading(true);
     try {
-      const result = await apiPost('/api/cases/generate', { notes });
-      navigate('/results', { state: { result } });
+      const { caseId } = await apiPost('/api/cases/generate', { notes });
+      setStatusMsg('AI is analysing your case…');
+      startElapsedCounter();
+      pollForResult(caseId, Date.now() + POLL_TIMEOUT);
     } catch (err) {
       setError(err.message || 'Failed to generate plan. Please try again.');
       setLoading(false);
@@ -55,6 +115,13 @@ export default function Dashboard() {
           />
           <p className="case-hint">Include as much detail as possible for accurate AI analysis and recommendations.</p>
           {error && <div className="error-msg">{error}</div>}
+          {statusMsg && !error && (
+            <div className="status-msg">
+              <span className="status-spinner">⏳</span>
+              {statusMsg}
+              <span className="status-elapsed">{elapsed}s</span>
+            </div>
+          )}
           <button className="btn-generate" onClick={handleGenerate} disabled={!notes.trim() || loading}>
             {loading ? '⏳ Generating Plan...' : '⚙️ Generate Plan'}
           </button>

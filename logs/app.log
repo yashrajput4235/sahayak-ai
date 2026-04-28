@@ -1,0 +1,353 @@
+[2026-04-28T10:32:39.026Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T10:32:38.999Z] [INFO] [Worker] Started, polling every {"interval":"5s"}
+[2026-04-28T10:33:00.407Z] [INFO] User logged in {"email":"yrajpoot648@gmail.com"}
+[2026-04-28T10:33:00.408Z] [INFO] Request completed {"method":"POST","url":"/api/auth/login","status":200,"duration":"1252ms","ip":"::1"}
+[2026-04-28T10:33:35.545Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:33:36.188Z] [INFO] Case queued {"caseId":"b81202a4-323e-48f1-a965-5d441a36829f","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:33:36.191Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"648ms","ip":"::1"}
+[2026-04-28T10:33:41.385Z] [INFO] [Worker] Processing job {"caseId":"b81202a4-323e-48f1-a965-5d441a36829f","retry":0}
+[2026-04-28T10:33:50.981Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:33:51.316Z] [INFO] Case queued {"caseId":"0b6c4ef8-b804-40cb-9744-cf0da48a1502","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:33:51.317Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"337ms","ip":"::1"}
+[2026-04-28T10:34:04.516Z] [INFO] [Worker] Job completed {"caseId":"b81202a4-323e-48f1-a965-5d441a36829f"}
+[2026-04-28T10:34:09.719Z] [INFO] [Worker] Processing job {"caseId":"0b6c4ef8-b804-40cb-9744-cf0da48a1502","retry":0}
+[2026-04-28T10:34:33.089Z] [INFO] [Worker] Job completed {"caseId":"0b6c4ef8-b804-40cb-9744-cf0da48a1502"}
+[2026-04-28T10:45:27.227Z] [INFO] User logged in {"email":"yrajpoot648@gmail.com"}
+[2026-04-28T10:45:27.227Z] [INFO] Request completed {"method":"POST","url":"/api/auth/login","status":200,"duration":"1239ms","ip":"::1"}
+[2026-04-28T10:46:00.525Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:46:00.775Z] [INFO] Case queued {"caseId":"f6b72829-3cc8-487a-8f0f-54bc16a11d78","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T10:46:00.776Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"252ms","ip":"::1"}
+[2026-04-28T10:46:03.789Z] [WARN] Request completed {"method":"GET","url":"/api/cases/f6b72829-3cc8-487a-8f0f-54bc16a11d78/status","status":404,"duration":"3ms","ip":"::1"}
+[2026-04-28T10:46:05.772Z] [INFO] [Worker] Processing job {"caseId":"f6b72829-3cc8-487a-8f0f-54bc16a11d78","retry":0}
+[2026-04-28T10:46:35.422Z] [INFO] [Worker] Job completed {"caseId":"f6b72829-3cc8-487a-8f0f-54bc16a11d78"}
+[2026-04-28T10:47:13.944Z] [WARN] Request completed {"method":"GET","url":"/assets/logo.png","status":404,"duration":"1ms","ip":"::1"}
+[2026-04-28T10:47:25.976Z] [WARN] Request completed {"method":"GET","url":"/assets/logo.png","status":404,"duration":"0ms","ip":"::1"}
+[2026-04-28T10:47:51.544Z] [WARN] Request completed {"method":"GET","url":"/assets/logo.png","status":404,"duration":"1ms","ip":"::1"}
+[2026-04-28T16:11:56.297Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"fetch failed"}
+[2026-04-28T17:00:01.064Z] [INFO] User logged in {"email":"yrajpoot648@gmail.com"}
+[2026-04-28T17:00:01.065Z] [INFO] Request completed {"method":"POST","url":"/api/auth/login","status":200,"duration":"2242ms","ip":"::1"}
+[2026-04-28T17:00:15.815Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:00:16.383Z] [INFO] Case queued {"caseId":"bb74be19-0b98-4429-8356-ffb49112afd5","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:00:16.384Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"570ms","ip":"::1"}
+[2026-04-28T17:00:19.391Z] [WARN] Request completed {"method":"GET","url":"/api/cases/bb74be19-0b98-4429-8356-ffb49112afd5/status","status":404,"duration":"1ms","ip":"::1"}
+[2026-04-28T17:00:20.280Z] [INFO] [Worker] Processing job {"caseId":"bb74be19-0b98-4429-8356-ffb49112afd5","retry":0}
+[2026-04-28T17:00:38.175Z] [INFO] [Worker] Job completed {"caseId":"bb74be19-0b98-4429-8356-ffb49112afd5"}
+[2026-04-28T17:02:52.009Z] [INFO] [Worker] Started, polling every {"interval":"5s"}
+[2026-04-28T17:02:52.040Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:02:59.505Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:03:00.529Z] [INFO] Case queued {"caseId":"7d9d3219-e4da-4b18-9ff9-342443413c4c","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:03:00.530Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"1027ms","ip":"::1"}
+[2026-04-28T17:03:02.903Z] [INFO] [Worker] Processing job {"caseId":"7d9d3219-e4da-4b18-9ff9-342443413c4c","retry":0}
+[2026-04-28T17:03:04.332Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":200,"duration":"796ms","ip":"::1"}
+[2026-04-28T17:03:07.718Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"379ms","ip":"::1"}
+[2026-04-28T17:03:10.892Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"168ms","ip":"::1"}
+[2026-04-28T17:03:14.018Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:03:17.441Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"418ms","ip":"::1"}
+[2026-04-28T17:03:20.593Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"146ms","ip":"::1"}
+[2026-04-28T17:03:24.099Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"196ms","ip":"::1"}
+[2026-04-28T17:03:28.034Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":304,"duration":"146ms","ip":"::1"}
+[2026-04-28T17:03:28.196Z] [INFO] [Worker] Job completed {"caseId":"7d9d3219-e4da-4b18-9ff9-342443413c4c"}
+[2026-04-28T17:03:32.088Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/7d9d3219-e4da-4b18-9ff9-342443413c4c","status":200,"duration":"192ms","ip":"::1"}
+[2026-04-28T17:16:06.101Z] [INFO] [Worker] Started, polling every {"interval":"5s"}
+[2026-04-28T17:16:06.130Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:16:18.966Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:16:19.926Z] [INFO] Case queued {"caseId":"1fcb9031-0ac9-4afb-888d-2f96c51cc56f","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:16:19.929Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"963ms","ip":"::1"}
+[2026-04-28T17:16:21.800Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:16:23.077Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":200,"duration":"144ms","ip":"::1"}
+[2026-04-28T17:16:26.243Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"161ms","ip":"::1"}
+[2026-04-28T17:16:29.378Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:16:33.170Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"305ms","ip":"::1"}
+[2026-04-28T17:16:36.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:16:40.126Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"139ms","ip":"::1"}
+[2026-04-28T17:16:43.269Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"137ms","ip":"::1"}
+[2026-04-28T17:16:46.412Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:16:49.547Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"128ms","ip":"::1"}
+[2026-04-28T17:16:52.670Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:16:56.021Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"342ms","ip":"::1"}
+[2026-04-28T17:16:59.994Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:17:03.981Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:17:07.118Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"133ms","ip":"::1"}
+[2026-04-28T17:17:10.235Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:17:13.985Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:17:17.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:17:21.982Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:17:25.928Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:17:29.163Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:17:32.291Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:17:35.426Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:17:39.026Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"595ms","ip":"::1"}
+[2026-04-28T17:17:42.188Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"157ms","ip":"::1"}
+[2026-04-28T17:17:46.007Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"143ms","ip":"::1"}
+[2026-04-28T17:17:49.171Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"160ms","ip":"::1"}
+[2026-04-28T17:17:52.323Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"133ms","ip":"::1"}
+[2026-04-28T17:17:55.473Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"122ms","ip":"::1"}
+[2026-04-28T17:17:58.684Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"203ms","ip":"::1"}
+[2026-04-28T17:18:01.812Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:18:04.951Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"135ms","ip":"::1"}
+[2026-04-28T17:18:08.093Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"135ms","ip":"::1"}
+[2026-04-28T17:18:11.218Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:18:14.337Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:18:17.453Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1fcb9031-0ac9-4afb-888d-2f96c51cc56f","status":304,"duration":"111ms","ip":"::1"}
+[2026-04-28T17:21:23.044Z] [INFO] [Worker] Started, polling every {"interval":"1s"}
+[2026-04-28T17:21:23.070Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:21:42.869Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:21:43.518Z] [INFO] Case queued {"caseId":"78a86e5c-1bae-4118-bd26-56a2fb7355ca","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:21:43.521Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"653ms","ip":"::1"}
+[2026-04-28T17:21:44.271Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:21:45.652Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:21:48.003Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"138ms","ip":"::1"}
+[2026-04-28T17:21:51.001Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"148ms","ip":"::1"}
+[2026-04-28T17:21:54.085Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"233ms","ip":"::1"}
+[2026-04-28T17:21:56.202Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"111ms","ip":"::1"}
+[2026-04-28T17:21:58.911Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"704ms","ip":"::1"}
+[2026-04-28T17:22:01.030Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:22:03.365Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"329ms","ip":"::1"}
+[2026-04-28T17:22:05.490Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:22:08.542Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"690ms","ip":"::1"}
+[2026-04-28T17:22:11.008Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"148ms","ip":"::1"}
+[2026-04-28T17:22:14.209Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"358ms","ip":"::1"}
+[2026-04-28T17:22:17.351Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"490ms","ip":"::1"}
+[2026-04-28T17:22:19.978Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:22:22.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"133ms","ip":"::1"}
+[2026-04-28T17:22:25.990Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"139ms","ip":"::1"}
+[2026-04-28T17:22:28.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:22:31.967Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:22:34.972Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:22:38.472Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"622ms","ip":"::1"}
+[2026-04-28T17:22:40.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:22:43.104Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:22:45.238Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:22:47.396Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"153ms","ip":"::1"}
+[2026-04-28T17:22:49.525Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:22:51.740Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"207ms","ip":"::1"}
+[2026-04-28T17:22:53.860Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:22:56.105Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"241ms","ip":"::1"}
+[2026-04-28T17:22:58.222Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:23:00.360Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"132ms","ip":"::1"}
+[2026-04-28T17:23:02.494Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:23:04.612Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:23:08.304Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"1686ms","ip":"::1"}
+[2026-04-28T17:23:10.525Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"122ms","ip":"::1"}
+[2026-04-28T17:23:12.663Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"132ms","ip":"::1"}
+[2026-04-28T17:23:14.799Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"132ms","ip":"::1"}
+[2026-04-28T17:23:16.941Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"138ms","ip":"::1"}
+[2026-04-28T17:23:19.061Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:23:21.238Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"173ms","ip":"::1"}
+[2026-04-28T17:23:23.383Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:23:25.529Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"134ms","ip":"::1"}
+[2026-04-28T17:23:27.670Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:23:30.058Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"379ms","ip":"::1"}
+[2026-04-28T17:23:32.237Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"175ms","ip":"::1"}
+[2026-04-28T17:23:34.370Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:23:36.542Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"169ms","ip":"::1"}
+[2026-04-28T17:23:38.665Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:23:40.784Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:23:42.960Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/78a86e5c-1bae-4118-bd26-56a2fb7355ca","status":304,"duration":"171ms","ip":"::1"}
+[2026-04-28T17:25:12.926Z] [INFO] [Worker] Started, polling every {"interval":"1s"}
+[2026-04-28T17:25:12.948Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:25:20.099Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:25:20.881Z] [INFO] Case queued {"caseId":"6718c4b2-c7b6-4d4c-8191-a40c2ad48518","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:25:20.882Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"785ms","ip":"::1"}
+[2026-04-28T17:25:21.823Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:25:23.036Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397122884","status":200,"duration":"148ms","ip":"::1"}
+[2026-04-28T17:25:25.161Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397125038","status":200,"duration":"119ms","ip":"::1"}
+[2026-04-28T17:25:27.312Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397127163","status":200,"duration":"145ms","ip":"::1"}
+[2026-04-28T17:25:29.437Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397129315","status":200,"duration":"118ms","ip":"::1"}
+[2026-04-28T17:25:31.583Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397131439","status":200,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:25:33.719Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397133585","status":200,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:25:35.861Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397135723","status":200,"duration":"128ms","ip":"::1"}
+[2026-04-28T17:25:38.007Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397137864","status":200,"duration":"138ms","ip":"::1"}
+[2026-04-28T17:25:40.129Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397140009","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:25:42.274Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397142131","status":200,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:25:44.524Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397144275","status":200,"duration":"245ms","ip":"::1"}
+[2026-04-28T17:25:46.654Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397146526","status":200,"duration":"118ms","ip":"::1"}
+[2026-04-28T17:25:48.788Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397148658","status":200,"duration":"125ms","ip":"::1"}
+[2026-04-28T17:25:51.028Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397150790","status":200,"duration":"235ms","ip":"::1"}
+[2026-04-28T17:25:53.158Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397153030","status":200,"duration":"125ms","ip":"::1"}
+[2026-04-28T17:25:55.302Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397155159","status":200,"duration":"137ms","ip":"::1"}
+[2026-04-28T17:25:57.440Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397157304","status":200,"duration":"132ms","ip":"::1"}
+[2026-04-28T17:25:59.584Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397159443","status":200,"duration":"135ms","ip":"::1"}
+[2026-04-28T17:26:01.725Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397161588","status":200,"duration":"134ms","ip":"::1"}
+[2026-04-28T17:26:03.853Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397163728","status":200,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:26:06.008Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397165855","status":200,"duration":"147ms","ip":"::1"}
+[2026-04-28T17:26:08.333Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397168010","status":200,"duration":"320ms","ip":"::1"}
+[2026-04-28T17:26:10.481Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397170335","status":200,"duration":"141ms","ip":"::1"}
+[2026-04-28T17:26:12.636Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397172484","status":200,"duration":"143ms","ip":"::1"}
+[2026-04-28T17:26:14.774Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397174641","status":200,"duration":"125ms","ip":"::1"}
+[2026-04-28T17:26:16.996Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397176840","status":200,"duration":"151ms","ip":"::1"}
+[2026-04-28T17:26:19.987Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397179839","status":200,"duration":"142ms","ip":"::1"}
+[2026-04-28T17:26:22.978Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397182839","status":200,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:26:26.042Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397185889","status":200,"duration":"131ms","ip":"::1"}
+[2026-04-28T17:26:28.972Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397188840","status":200,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:26:32.159Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397191839","status":200,"duration":"317ms","ip":"::1"}
+[2026-04-28T17:26:34.979Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397194838","status":200,"duration":"137ms","ip":"::1"}
+[2026-04-28T17:26:37.979Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397197840","status":200,"duration":"135ms","ip":"::1"}
+[2026-04-28T17:26:40.293Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397200160","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:26:42.421Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397202296","status":200,"duration":"122ms","ip":"::1"}
+[2026-04-28T17:26:44.558Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397204424","status":200,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:26:46.718Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397206561","status":200,"duration":"149ms","ip":"::1"}
+[2026-04-28T17:26:48.852Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397208722","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:26:50.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397210854","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:26:53.107Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397212986","status":200,"duration":"118ms","ip":"::1"}
+[2026-04-28T17:26:55.254Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397215110","status":200,"duration":"141ms","ip":"::1"}
+[2026-04-28T17:26:57.391Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397217256","status":200,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:26:59.525Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397219393","status":200,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:27:01.655Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397221528","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:27:03.781Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397223658","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:27:05.909Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397225783","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:27:08.035Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397227911","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:27:10.154Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397230037","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:27:12.274Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397232155","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:27:14.395Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397234277","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:27:16.520Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397236397","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:27:18.648Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397238524","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:27:20.780Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/6718c4b2-c7b6-4d4c-8191-a40c2ad48518?_t=1777397240651","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:34:32.863Z] [INFO] [Worker] Started, polling every {"interval":"1s"}
+[2026-04-28T17:34:32.896Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:34:35.659Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:34:36.349Z] [INFO] Case queued {"caseId":"1c2c3c4a-6f4c-46cd-9829-e5c58b577eed","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:34:36.352Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"694ms","ip":"::1"}
+[2026-04-28T17:34:36.427Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:34:38.491Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397678357","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:34:40.629Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397680493","status":200,"duration":"133ms","ip":"::1"}
+[2026-04-28T17:34:42.766Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397682631","status":200,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:34:45.009Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397684772","status":200,"duration":"229ms","ip":"::1"}
+[2026-04-28T17:34:47.136Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397687010","status":200,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:34:49.257Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397689138","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:34:51.382Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397691258","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:34:53.513Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397693384","status":200,"duration":"125ms","ip":"::1"}
+[2026-04-28T17:34:55.644Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397695517","status":200,"duration":"118ms","ip":"::1"}
+[2026-04-28T17:34:57.779Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397697648","status":200,"duration":"122ms","ip":"::1"}
+[2026-04-28T17:34:59.900Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397699782","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:35:02.027Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397701903","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:35:05.004Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397704869","status":200,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:35:08.008Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397707869","status":200,"duration":"134ms","ip":"::1"}
+[2026-04-28T17:35:11.001Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397710867","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:35:13.366Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397713213","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:35:15.498Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397715373","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:35:18.001Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397717868","status":200,"duration":"128ms","ip":"::1"}
+[2026-04-28T17:35:21.013Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397720868","status":200,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:35:23.997Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397723868","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:35:27.007Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397726867","status":200,"duration":"134ms","ip":"::1"}
+[2026-04-28T17:35:30.011Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397729867","status":200,"duration":"139ms","ip":"::1"}
+[2026-04-28T17:35:33.013Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397732868","status":200,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:35:35.991Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397735867","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:35:38.989Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397738867","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:35:41.988Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397741867","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:35:44.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397744867","status":200,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:35:48.013Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397747867","status":200,"duration":"141ms","ip":"::1"}
+[2026-04-28T17:35:50.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397750867","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:35:54.011Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397753867","status":200,"duration":"139ms","ip":"::1"}
+[2026-04-28T17:35:56.987Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397756867","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:35:59.997Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397759866","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:36:03.006Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397762866","status":200,"duration":"135ms","ip":"::1"}
+[2026-04-28T17:36:06.000Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397765866","status":200,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:36:08.985Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397768866","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:36:12.001Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397771866","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:36:15.000Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397774867","status":200,"duration":"128ms","ip":"::1"}
+[2026-04-28T17:36:18.008Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397777866","status":200,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:36:21.014Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397780866","status":200,"duration":"143ms","ip":"::1"}
+[2026-04-28T17:36:24.003Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397783866","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:36:26.987Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397786865","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:36:29.991Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397789865","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:36:32.986Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397792865","status":200,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:36:35.982Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397795866","status":200,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:36:38.981Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397798865","status":200,"duration":"111ms","ip":"::1"}
+[2026-04-28T17:36:42.039Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397801865","status":200,"duration":"169ms","ip":"::1"}
+[2026-04-28T17:36:44.986Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397804865","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:36:48.011Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397807865","status":200,"duration":"141ms","ip":"::1"}
+[2026-04-28T17:36:50.981Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397810865","status":200,"duration":"110ms","ip":"::1"}
+[2026-04-28T17:36:53.105Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397812984","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:36:55.256Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397815107","status":200,"duration":"142ms","ip":"::1"}
+[2026-04-28T17:36:57.376Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397817258","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:36:59.493Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397819378","status":200,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:37:01.611Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397821494","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:37:04.625Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397824294","status":200,"duration":"204ms","ip":"::1"}
+[2026-04-28T17:37:06.752Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397826630","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:37:08.884Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397828754","status":200,"duration":"122ms","ip":"::1"}
+[2026-04-28T17:37:11.047Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397830888","status":200,"duration":"155ms","ip":"::1"}
+[2026-04-28T17:37:13.173Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397833049","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:37:15.327Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397835175","status":200,"duration":"146ms","ip":"::1"}
+[2026-04-28T17:37:17.455Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397837329","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:37:19.588Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397839458","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:37:21.993Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397841863","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:37:25.050Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397844864","status":200,"duration":"181ms","ip":"::1"}
+[2026-04-28T17:37:27.999Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397847864","status":200,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:37:31.009Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397850864","status":200,"duration":"137ms","ip":"::1"}
+[2026-04-28T17:37:33.988Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397853863","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:37:36.991Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397856863","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:37:39.980Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397859863","status":200,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:37:42.986Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397862864","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:37:45.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397865864","status":200,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:37:49.007Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397868862","status":200,"duration":"137ms","ip":"::1"}
+[2026-04-28T17:37:52.056Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397871862","status":200,"duration":"186ms","ip":"::1"}
+[2026-04-28T17:37:54.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397874863","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:37:57.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397877862","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:38:01.046Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397880863","status":200,"duration":"174ms","ip":"::1"}
+[2026-04-28T17:38:03.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397883863","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:38:06.985Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397886861","status":200,"duration":"112ms","ip":"::1"}
+[2026-04-28T17:38:09.994Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397889862","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:38:12.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397892862","status":200,"duration":"124ms","ip":"::1"}
+[2026-04-28T17:38:15.981Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397895863","status":200,"duration":"113ms","ip":"::1"}
+[2026-04-28T17:38:19.072Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397898862","status":200,"duration":"204ms","ip":"::1"}
+[2026-04-28T17:38:21.193Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/1c2c3c4a-6f4c-46cd-9829-e5c58b577eed?_t=1777397901074","status":200,"duration":"116ms","ip":"::1"}
+[2026-04-28T17:39:50.410Z] [INFO] Server started {"port":"8000"}
+[2026-04-28T17:39:50.386Z] [INFO] [Worker] Started, polling every {"interval":"1s"}
+[2026-04-28T17:40:04.323Z] [INFO] User logged in {"email":"yrajpoot648@gmail.com"}
+[2026-04-28T17:40:04.323Z] [INFO] Request completed {"method":"POST","url":"/api/auth/login","status":200,"duration":"973ms","ip":"::1"}
+[2026-04-28T17:40:31.460Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:40:31.943Z] [INFO] Case queued {"caseId":"a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:40:31.944Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"488ms","ip":"::1"}
+[2026-04-28T17:40:32.367Z] [INFO] [Worker] Processing job {"caseId":"a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a","retry":0}
+[2026-04-28T17:40:35.075Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398034862","status":200,"duration":"203ms","ip":"::1"}
+[2026-04-28T17:40:38.009Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398037859","status":200,"duration":"146ms","ip":"::1"}
+[2026-04-28T17:40:41.022Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398040858","status":200,"duration":"157ms","ip":"::1"}
+[2026-04-28T17:40:44.194Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398043858","status":200,"duration":"164ms","ip":"::1"}
+[2026-04-28T17:40:46.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398046858","status":200,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:40:49.975Z] [INFO] [Worker] Job completed {"caseId":"a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a"}
+[2026-04-28T17:40:50.253Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/a778fc3b-47a9-48c7-9baf-3d8d39fb9b3a?_t=1777398049858","status":200,"duration":"387ms","ip":"::1"}
+[2026-04-28T17:41:53.921Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:41:54.213Z] [INFO] Case queued {"caseId":"e1ed00ef-7e7e-4b23-99a9-862ba7794f23","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:41:54.214Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"295ms","ip":"::1"}
+[2026-04-28T17:41:54.880Z] [INFO] [Worker] Processing job {"caseId":"e1ed00ef-7e7e-4b23-99a9-862ba7794f23","retry":0}
+[2026-04-28T17:41:56.552Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398116216","status":200,"duration":"332ms","ip":"::1"}
+[2026-04-28T17:41:59.033Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398118860","status":200,"duration":"167ms","ip":"::1"}
+[2026-04-28T17:42:01.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398121856","status":200,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:42:04.994Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398124861","status":200,"duration":"128ms","ip":"::1"}
+[2026-04-28T17:42:08.070Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398127855","status":200,"duration":"210ms","ip":"::1"}
+[2026-04-28T17:42:10.985Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398130856","status":200,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:42:13.988Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398133856","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:42:16.988Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398136855","status":200,"duration":"127ms","ip":"::1"}
+[2026-04-28T17:42:19.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398139855","status":200,"duration":"132ms","ip":"::1"}
+[2026-04-28T17:42:22.977Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398142854","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:42:26.025Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398145854","status":200,"duration":"165ms","ip":"::1"}
+[2026-04-28T17:42:28.985Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398148855","status":200,"duration":"123ms","ip":"::1"}
+[2026-04-28T17:42:31.274Z] [INFO] [Worker] Job completed {"caseId":"e1ed00ef-7e7e-4b23-99a9-862ba7794f23"}
+[2026-04-28T17:42:31.989Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/e1ed00ef-7e7e-4b23-99a9-862ba7794f23?_t=1777398151854","status":200,"duration":"130ms","ip":"::1"}
+[2026-04-28T17:44:08.249Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:44:09.260Z] [INFO] Case queued {"caseId":"26b5997e-9ab6-4007-91de-3b7cdcd3622d","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:44:09.261Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"1012ms","ip":"::1"}
+[2026-04-28T17:44:09.326Z] [INFO] [Worker] Processing job {"caseId":"26b5997e-9ab6-4007-91de-3b7cdcd3622d","retry":0}
+[2026-04-28T17:44:11.387Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398251263","status":200,"duration":"120ms","ip":"::1"}
+[2026-04-28T17:44:13.531Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398253390","status":200,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:44:15.653Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398255533","status":200,"duration":"115ms","ip":"::1"}
+[2026-04-28T17:44:18.005Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398257852","status":200,"duration":"140ms","ip":"::1"}
+[2026-04-28T17:44:21.038Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398260852","status":200,"duration":"181ms","ip":"::1"}
+[2026-04-28T17:44:23.991Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398263850","status":200,"duration":"131ms","ip":"::1"}
+[2026-04-28T17:44:26.992Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398266851","status":200,"duration":"136ms","ip":"::1"}
+[2026-04-28T17:44:29.973Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398269852","status":200,"duration":"114ms","ip":"::1"}
+[2026-04-28T17:44:31.057Z] [INFO] [Worker] Job completed {"caseId":"26b5997e-9ab6-4007-91de-3b7cdcd3622d"}
+[2026-04-28T17:44:32.983Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/26b5997e-9ab6-4007-91de-3b7cdcd3622d?_t=1777398272851","status":200,"duration":"126ms","ip":"::1"}
+[2026-04-28T17:45:02.549Z] [INFO] Queuing case generation {"user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:45:02.961Z] [INFO] Case queued {"caseId":"d2c115a6-f814-44a4-b3d2-48416d9ddd52","user_id":"49fb1808-c624-4649-8bb4-c78df52f77b7"}
+[2026-04-28T17:45:02.962Z] [INFO] Request completed {"method":"POST","url":"/api/cases/generate","status":202,"duration":"414ms","ip":"::1"}
+[2026-04-28T17:45:03.345Z] [INFO] [Worker] Processing job {"caseId":"d2c115a6-f814-44a4-b3d2-48416d9ddd52","retry":0}
+[2026-04-28T17:45:05.975Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398305850","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:45:08.996Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398308850","status":200,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:45:11.972Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398311850","status":200,"duration":"117ms","ip":"::1"}
+[2026-04-28T17:45:14.976Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398314849","status":200,"duration":"121ms","ip":"::1"}
+[2026-04-28T17:45:17.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398317849","status":200,"duration":"129ms","ip":"::1"}
+[2026-04-28T17:45:20.998Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398320850","status":200,"duration":"144ms","ip":"::1"}
+[2026-04-28T17:45:22.681Z] [INFO] [Worker] Job completed {"caseId":"d2c115a6-f814-44a4-b3d2-48416d9ddd52"}
+[2026-04-28T17:45:23.984Z] [INFO] Request completed {"method":"GET","url":"/api/cases/status/d2c115a6-f814-44a4-b3d2-48416d9ddd52?_t=1777398323850","status":200,"duration":"127ms","ip":"::1"}

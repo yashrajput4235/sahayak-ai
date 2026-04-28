@@ -1,9 +1,15 @@
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import caseRoutes from './routes/caseRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import { requestLogger } from './middleware/requestLogger.js';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
+
+// Serve static assets (logo, etc.) from backend/public
+app.use('/assets', express.static(path.join(__dirname, '../public')));
 
 // Manual CORS middleware — works reliably with Express 5
 app.use((req, res, next) => {

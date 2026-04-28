@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LOGO_URL } from '../services/api';
 
 export default function Navbar({ dark = false }) {
   const [open, setOpen] = useState(false);
@@ -36,7 +37,9 @@ export default function Navbar({ dark = false }) {
   return (
     <nav className={`navbar${dark ? ' navbar-dark' : ''}`}>
       <div className="navbar-logo" style={dark ? { color: '#F9FAFB' } : {}}>
-        <div className="navbar-logo-icon">🧠</div>
+        <div className="navbar-logo-icon">
+            <img src={LOGO_URL} alt="Sahayak AI" className="navbar-logo-img" />
+          </div>
         SAHAYAK AI
       </div>
 

@@ -8,7 +8,11 @@ const redis = new Redis({
 const QUEUE_KEY = "case_queue";
 const FAILED_QUEUE_KEY = "failed_queue";
 
+export const clearQueue = async () => {
+    await redis.del(QUEUE_KEY);
+};
 // 📬 Add job (supports retry field)
+// 📬 Add job
 export const addToQueue = async (data) => {
     await redis.lpush(QUEUE_KEY, data);
 };

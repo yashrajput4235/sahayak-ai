@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { apiPost } from '../services/api';
+import { apiPost, LOGO_URL } from '../services/api';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -31,7 +31,9 @@ export default function Login() {
       <div className="auth-left">
         <div className="auth-left-bg">AI</div>
         <div className="auth-logo">
-          <div className="auth-logo-icon">🧠</div>
+          <div className="auth-logo-icon">
+            <img src={LOGO_URL} alt="Sahayak AI" className="auth-logo-img" />
+          </div>
           SAHAYAK AI
         </div>
         <div className="auth-left-content">

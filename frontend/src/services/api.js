@@ -1,4 +1,8 @@
+import logoImg from '../assets/logo.png';
+
 const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
+export const LOGO_URL = logoImg;
 
 const getHeaders = () => {
   const token = localStorage.getItem('sahayak_token');

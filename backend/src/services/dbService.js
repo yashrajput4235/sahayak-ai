@@ -22,6 +22,19 @@ export const saveCase = async (notes, output, userId) => {
     );
 };
 
+export const getCaseById = async (caseId) => {
+    const res = await axios.get(
+        `${URL}/rest/v1/cases?id=eq.${caseId}`,
+        {
+            headers: {
+                apikey: KEY,
+                Authorization: `Bearer ${KEY}`,
+            }
+        }
+    );
+    return res.data[0] ?? null;
+};
+
 export const fetchUserCases = async (userId) => {
     const res = await axios.get(
         `${URL}/rest/v1/cases?user_id=eq.${userId}&order=created_at.desc`,
@@ -77,6 +90,20 @@ export const createCase = async (data) => {
         }
     );
     return res.data[0];
+};
+
+export const markCaseProcessing = async (caseId) => {
+    await axios.patch(
+        `${URL}/rest/v1/cases?id=eq.${caseId}`,
+        { status: 'processing' },
+        {
+            headers: {
+                apikey: KEY,
+                Authorization: `Bearer ${KEY}`,
+                "Content-Type": "application/json"
+            }
+        }
+    );
 };
 
 export const updateCase = async (caseId, output) => {

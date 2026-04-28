@@ -3,12 +3,60 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 function getRiskMeta(risk) {
-  if (!risk) return { level: 'Unknown', color: 'orange', badgeClass: 'badge-orange', desc: 'Risk level could not be determined.' };
+  if (!risk) return {
+    level: 'Unknown', color: 'orange', badgeClass: 'badge-orange',
+    desc: 'Risk level could not be determined.',
+    detail: 'AI was unable to assess the risk level from the provided information.'
+  };
   const r = risk.toLowerCase();
-  if (r === 'high') return { level: 'High Risk', color: 'red', badgeClass: 'badge-red', desc: 'This case requires immediate attention and urgent intervention.' };
-  if (r === 'medium') return { level: 'Medium Risk', color: 'orange', badgeClass: 'badge-orange', desc: 'This case needs structured support and regular follow-up.' };
-  return { level: 'Low Risk', color: 'green', badgeClass: 'badge-green', desc: 'Based on the provided information, the person appears to be in a stable situation with manageable challenges.' };
+  if (r === 'high') return {
+    level: 'High Risk', color: 'red', badgeClass: 'badge-red',
+    desc: 'Immediate attention & urgent intervention required.',
+    detail: 'Score 70–100 · Case shows severe vulnerability — financial crisis, health emergency, or safety threat. Action must begin within 24–48 hours.'
+  };
+  if (r === 'medium') return {
+    level: 'Medium Risk', color: 'orange', badgeClass: 'badge-orange',
+    desc: 'Structured support & regular follow-up needed.',
+    detail: 'Score 40–70 · Case has moderate challenges that could worsen without timely intervention. Scheduled support over 30 days recommended.'
+  };
+  return {
+    level: 'Low Risk', color: 'green', badgeClass: 'badge-green',
+    desc: 'Stable situation with manageable challenges.',
+    detail: 'Score 0–40 · Person has basic needs met and support systems in place. Periodic check-ins and scheme enrolment are sufficient.'
+  };
 }
+
+function RiskScoreCircle({ score, color }) {
+  const radius = 36;
+  const circumference = 2 * Math.PI * radius;
+  const colorMap = { red: '#EF4444', orange: '#F97316', green: '#22C55E' };
+  const stroke = colorMap[color] || '#94A3B8';
+  const offset = circumference - (score / 100) * circumference;
+
+  return (
+    <div className="risk-score-circle-wrap">
+      <svg width="110" height="110" viewBox="0 0 90 90">
+        <circle cx="45" cy="45" r={radius} fill="none" stroke="#E5E7EB" strokeWidth="8" />
+        <circle
+          cx="45" cy="45" r={radius}
+          fill="none"
+          stroke={stroke}
+          strokeWidth="8"
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          transform="rotate(-90 45 45)"
+          style={{ transition: 'stroke-dashoffset 0.6s ease' }}
+        />
+      </svg>
+      <div className="risk-score-circle-label" style={{ color: stroke }}>
+        <span className="risk-score-num">{score}</span>
+        <span className="risk-score-unit">/100</span>
+      </div>
+    </div>
+  );
+}
+
 
 function SchemeItem({ scheme }) {
   const [open, setOpen] = useState(true);
@@ -99,8 +147,9 @@ export default function Results() {
               <span className={riskMeta.badgeClass}>{riskMeta.level}</span>
             </div>
             <p>{riskMeta.desc}</p>
+            <p className="risk-detail">{riskMeta.detail}</p>
             {result.risk_score !== undefined && (
-              <p><strong>Risk Score:</strong> {result.risk_score}/100</p>
+              <RiskScoreCircle score={result.risk_score} color={riskMeta.color} />
             )}
           </div>
 

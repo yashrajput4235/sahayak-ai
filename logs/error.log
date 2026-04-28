@@ -1,0 +1,5 @@
+[2026-04-28T16:11:56.297Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"fetch failed"}
+[2026-04-28T17:16:21.800Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:21:44.271Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:25:21.823Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
+[2026-04-28T17:34:36.427Z] [ERROR] [Worker] Unexpected error in poll loop {"message":"\"[object Object]\" is not valid JSON"}
