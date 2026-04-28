@@ -11,9 +11,18 @@ const app = express();
 // Serve static assets (logo, etc.) from backend/public
 app.use('/assets', express.static(path.join(__dirname, '../public')));
 
+const ALLOWED_ORIGINS = [
+  'https://sahayakai.online',
+  'https://www.sahayakai.online',
+  'http://localhost:3000',
+];
+
 // Manual CORS middleware — works reliably with Express 5
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  const origin = req.headers.origin;
+  if (ALLOWED_ORIGINS.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
