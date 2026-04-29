@@ -999,3 +999,196 @@ body.dark-mode .risk-detail {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
 }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Tablet  (≤ 1024px)
+══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  /* Auth layout: stack vertically */
+  .auth-layout {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .auth-left {
+    width: 100%;
+    padding: 32px 32px 28px;
+  }
+
+  /* Hide heavy content on tablet, keep logo + short description */
+  .auth-left-content h1 { font-size: 24px; }
+  .auth-left p { margin-bottom: 20px; }
+  .feature-list, .checklist { gap: 12px; }
+
+  .testimonial { display: none; }
+
+  .auth-right {
+    width: 100%;
+    padding: 32px 32px 40px;
+  }
+
+  /* Results grid: single column on tablet */
+  .results-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Results padding */
+  .results-inner {
+    padding: 24px 32px;
+  }
+
+  /* Dashboard padding */
+  .dashboard-page {
+    padding: 32px 24px;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 0 20px;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Mobile  (≤ 640px)
+══════════════════════════════════════════ */
+@media (max-width: 640px) {
+  /* Auth layout: minimal banner on mobile */
+  .auth-left {
+    padding: 20px 20px 24px;
+    min-height: unset;
+  }
+
+  /* Hide decorative / marketing content on small screens */
+  .auth-left-content { display: none; }
+  .stats-row { display: none; }
+  .testimonial { display: none; }
+
+  /* Keep logo centered as a header banner */
+  .auth-logo {
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .auth-left-bg { font-size: 140px; }
+
+  .auth-right {
+    padding: 24px 16px 40px;
+  }
+
+  .auth-card {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .auth-card h2 { font-size: 20px; }
+
+  /* Navbar */
+  .navbar {
+    padding: 0 16px;
+    height: 52px;
+  }
+
+  .navbar-logo {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .navbar-logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Dashboard */
+  .dashboard-page {
+    padding: 20px 16px;
+  }
+
+  .dashboard-header h1 { font-size: 20px; }
+  .dashboard-header { margin-bottom: 20px; }
+
+  .case-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .case-textarea {
+    min-height: 180px;
+    font-size: 14px;
+  }
+
+  .btn-generate {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* Results */
+  .results-inner {
+    padding: 16px 16px;
+  }
+
+  .results-header h1 { font-size: 20px; }
+
+  .results-top-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .result-card {
+    padding: 16px;
+  }
+
+  .result-card-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .schemes-section {
+    padding: 16px;
+  }
+
+  .scheme-header {
+    padding: 14px 14px;
+  }
+
+  .scheme-steps {
+    padding: 12px 14px;
+  }
+
+  .analyze-another-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Risk score circle */
+  .risk-score-circle-wrap svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Skeleton grid */
+  .skeleton-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE — Extra small  (≤ 380px)
+══════════════════════════════════════════ */
+@media (max-width: 380px) {
+  .auth-card {
+    padding: 22px 14px;
+  }
+
+  .navbar-logo span,
+  .navbar-logo-text {
+    display: none;
+  }
+
+  .dashboard-header h1 { font-size: 18px; }
+  .results-header h1 { font-size: 18px; }
+}
